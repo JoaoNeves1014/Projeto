@@ -238,25 +238,25 @@ body {
     border-color: #76b900;
 }
 
-.section-amd h2 {
+.section-amdR h2 {
     border-left-color: #ed1c24; 
 }
 
 
-.section-amd .card-info h3 {
+.section-amdR .card-info h3 {
     color: white;
 }
 
 
-.section-amd .btn-buy {
+.section-amdR .btn-buy {
     border-color: #ed1c24;
 }
 
-.section-amd .btn-buy:hover {
+.section-amdR .btn-buy:hover {
     background-color: #ed1c24;
     color: white;
 }
 
-.section-amd .card:hover {
+.section-amdR .card:hover {
     border-color: #ed1c24;
 }
