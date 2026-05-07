@@ -54,6 +54,7 @@ body {
     text-shadow: 0 0 8px var(--petronas-turq);
 }
 
+/* 3. BUSCA */
 .search-container {
     display: flex;
 }
@@ -82,26 +83,26 @@ body {
     background-color: #00c2ba;
 }
 
+
 .container {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
 }
+
+.content-section { margin-bottom: 50px; }
 
 .content-section h2 {
     margin-bottom: 25px;
     border-left: 5px solid var(--petronas-turq);
     padding-left: 15px;
-    color: white;
     text-transform: uppercase;
-    font-size: 1.5rem;
 }
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 25px;
-    margin-bottom: 10px;
 }
 
 .card {
@@ -109,13 +110,14 @@ body {
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid #333;
-    transition: all 0.3s ease;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column; 
 }
 
 .card:hover {
     transform: translateY(-8px);
     border-color: var(--petronas-turq);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card-image {
@@ -123,64 +125,45 @@ body {
     height: 180px;
     background-color: #252525;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .card-image img {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
-.card h3 {
+.card-info {
     padding: 20px;
-    font-size: 1.1rem;
-    text-align: center;
-    color: var(--petronas-turq);
-}
-.card-title {
-    margin-bottom: 10px;
-}
-.slideshow {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1; 
 }
 
-.slideshow a {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+.card-info h3 {
+    font-size: 1rem;
+    color: var white;
+    min-height: 45px; 
 }
 
-.slideshow img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  animation: fade 9s infinite;
+.price {
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-.slideshow a:nth-child(1) img {
-  animation-delay: 0s;
+.btn-buy {
+    background: transparent;
+    border: 1px solid var(--petronas-turq);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
 }
 
-.slideshow a:nth-child(2) img {
-  animation-delay: 3s;
-}
-
-.slideshow a:nth-child(3) img {
-  animation-delay: 6s;
-}
-
-@keyframes fade {
-  0%   { opacity: 0; }
-  10%  { opacity: 1; }
-  30%  { opacity: 1; }
-  40%  { opacity: 0; }
-  100% { opacity: 0; }
+.btn-buy:hover {
+    background: var(--petronas-turq);
 }
