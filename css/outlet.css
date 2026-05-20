@@ -167,3 +167,105 @@ body {
 .btn-buy:hover {
     background: var(--petronas-turq);
 }
+
+.main-footer {
+    background-color: var(--dark);
+    color: #ccc;
+    padding: 60px 0 20px 0;
+    margin-top: 60px;
+    border-top: 4px solid var(--primary);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-col h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+.footer-col h4 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #999;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: 12px;
+}
+
+.footer-col a {
+    color: #999;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.footer-col a:hover {
+    color: var(--petronas-turq);
+    padding-left: 5px; 
+}
+
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 20px 20px 0 20px;
+    border-top: 1px solid #222;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-col h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-col a:hover {
+        padding-left: 0;
+    }
+}
