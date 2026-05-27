@@ -209,6 +209,28 @@ body {
 .section-intel .card:hover {
     border-color: #0071c5;
 }
+.section-PLCMAE h2 {
+    border-left-color: #7d00c5; 
+}
+
+.section-PLCMAE .card-info h3 {
+    color: #7d00c5;
+}
+
+.section-PLCMAE .btn-buy {
+    border-color: #7d00c5;
+}
+
+
+.section-PLCMAE .btn-buy:hover {
+    background-color: #7d00c5;
+    color: white;
+}
+
+
+.section-PLCMAE .card:hover {
+    border-color: #7d00c5;
+}
 
 .section-perifericos h2 {
     border-left-color: #868686; 
